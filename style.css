@@ -1,0 +1,282 @@
+@font-face
+
+{
+    font-family: Roboto;
+    src:url(Roboto-Medium.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Roboto;
+    color: #000;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 50px;
+    background-color: #4E4E4E;
+    color: #fff;
+    z-index: 999;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #4E4E4E;
+}
+
+footer > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+h2 {
+    color: #152D41;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav > figure {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 46px;
+    justify-content: space-between;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li > a {
+    color: #F1F1F1;
+    text-decoration: none;
+}
+
+section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.button {
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    height: 40px;
+    padding: 0 58px;
+    background-color: transparent;
+    border: 3px solid #fff;
+}
+
+.button:hover {
+    background-color: #FFFFFF;
+    color: black;
+    transition: all 1s ease-in-out;
+}
+
+.hero-section {
+    height: 100vh;
+    background-image: url(./images/Tlosekcji.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.hero-text-container {
+    max-width: 980px;
+    color: #fff;
+}
+
+.hero-text-container h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 62px;
+    max-width: 550px;
+}
+
+.hero-text-container > p {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 42px;
+    max-width: 550px;
+}
+
+.specialists-section {
+    display: flex;
+    gap: 32px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.specialists-section-container {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.specialists-section-container:nth-last-of-type(even) {
+    flex-direction: row-reverse;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.reverse > .specialists-section-text h3 {
+    text-align: end;
+}
+
+.reverse > .specialists-section-text p {
+    text-align: end;
+}
+
+.specialists-section-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.specialists-section h2 {
+    margin-bottom: 38px;
+}
+.specialists-section-circle {
+    max-height: 200px;
+    max-width: 200px;
+    min-height: 50px;
+    min-width: 50px;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-size: contain;
+    background-position: center;
+}
+
+.person-image {
+    background-image: url(./images/photo-1.png);
+}
+
+.person-image-2 {
+    background-image: url(./images/photo-2.png);
+}
+
+.avatar {
+    max-width: 200px;
+    max-height: 200px;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.company-section {
+    padding-bottom: 80px;
+    background-color:#405D78;
+}
+
+.company {
+    padding: 18px 0;
+    color: #f1f1f1;
+}
+
+.wrapper {
+    max-width: 960px;
+    width: 100%;
+    z-index: 1;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 198px);
+    grid-template-rows: repeat(2, 198px);
+    justify-content: center;
+    width: 100%;
+    gap: 28px;
+    padding: 0 90px 0 94px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 28%;
+    background-color: #F1F1F1;
+    
+    width: 198px;
+    height: 198px;
+}
+
+.box p {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    transition: transform 1s ease-in-out;
+}
+
+.footer-paragraph {
+    color: #FFFFFF;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.darker {
+    background-color: rgba(0, 0, 0, 0.14);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#hero {
+    position: relative;
+    z-index: 1;
+}
